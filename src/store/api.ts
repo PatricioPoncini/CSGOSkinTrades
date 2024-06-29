@@ -12,12 +12,13 @@ export interface Skin {
 }
 export interface Sticker {
     name: string;
-    description: string;
     image: string;
     rarity: {
         id: string;
         name: string;
     }
+    tournament_event: string ;
+    tournament_team :string | undefined ;
 }
 
 export const useSkinStore = defineStore('skinStore', {
