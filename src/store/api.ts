@@ -10,6 +10,13 @@ export interface Skin {
         name: string;
     }
 }
+export interface Key {
+    name: string;
+    description: string;
+    image: string;
+    crates: object[]
+   
+}
 
 export const useSkinStore = defineStore('skinStore', {
     state: () => ({
@@ -20,6 +27,18 @@ export const useSkinStore = defineStore('skinStore', {
             const response = await axios.get("https://bymykel.github.io/CSGO-API/api/es-MX/skins.json")
             this.skins = response.data
             console.log(this.skins)
+        }
+    }
+});
+export const useKeyStore = defineStore('keyStore', {
+    state: () => ({
+        keys: [] as Key[]
+    }),
+    actions: {
+        async getKeys() {
+            const response = await axios.get("https://bymykel.github.io/CSGO-API/api/es-MX/keys.json")
+            this.keys = response.data
+            console.log(this.keys)
         }
     }
 });
