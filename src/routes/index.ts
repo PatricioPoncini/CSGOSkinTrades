@@ -2,10 +2,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Skins from "../views/Skins.vue";
+import Collectibles from "../views/Collectibles.vue";
 
 const routes = [
   { path: "/", component: Home },
   { path: "/skins", component: Skins },
+  { path: "/collectibles", component: Collectibles },
+
 ];
 
 const router = createRouter({
