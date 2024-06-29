@@ -22,13 +22,20 @@ export interface Box {
 export const useSkinStore = defineStore('skinStore', {
     state: () => ({
         skins: [] as Skin[],
-        boxes: [] as Box[]
     }),
     actions: {
         async getSkins() {
             const response = await axios.get("https://bymykel.github.io/CSGO-API/api/es-MX/skins.json")
             this.skins = response.data;
         },
+    }
+});
+
+export const useBoxesStore = defineStore('boxesStore', {
+    state: () => ({
+        boxes: [] as Box[]
+    }),
+    actions: {
         async getBoxes() {
             const response = await axios.get("https://bymykel.github.io/CSGO-API/api/es-MX/crates.json")
             this.boxes = response.data;
