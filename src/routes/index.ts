@@ -2,10 +2,14 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Skins from "../views/Skins.vue";
+import Boxes from "../views/Boxes.vue";
+import AboutUs from "../views/AboutUs.vue";
 
 const routes = [
   { path: "/", component: Home },
   { path: "/skins", component: Skins },
+  { path: "/boxes", component: Boxes },
+  { path: "/about-us", component: AboutUs },
 ];
 
 const router = createRouter({

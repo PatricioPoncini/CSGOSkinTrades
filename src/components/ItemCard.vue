@@ -56,7 +56,7 @@ const bgColor = computed(() => `bg-[${getRarityColor(rarity)}] px-2 py-1 text-pr
     <div className="p-4 bg-background">
       <h3 className="text-xl font-semibold line-clamp-1 min-h-[2rem]">{{ title }}</h3>
       <p v-html="description" className="text-lg text-muted-foreground line-clamp-3 max-h-[5rem]"></p>
-      <div className="flex items-centergap-2 mt-2">
+      <div className="flex items-center gap-2 mt-2">
         <span :class="bgColor">{{ rarityName }}</span>
       </div>
     </div>
