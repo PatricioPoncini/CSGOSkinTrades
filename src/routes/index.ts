@@ -5,6 +5,7 @@ import Skins from "../views/Skins.vue";
 import Boxes from "../views/Boxes.vue";
 import AboutUs from "../views/AboutUs.vue";
 import Stickers from '../views/Stickers.vue'
+import Collectibles from "../views/Collectibles.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -12,6 +13,8 @@ const routes = [
   { path: "/boxes", component: Boxes },
   { path: "/aboutUs", component: AboutUs },
   { path: "/stickers", component: Stickers },
+  { path: "/collectibles", component: Collectibles },
+
 ];
 
 const router = createRouter({
