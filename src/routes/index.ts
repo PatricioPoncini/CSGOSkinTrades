@@ -1,9 +1,11 @@
 // routes.js
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
+import Skins from "../views/Skins.vue";
 
 const routes = [
   { path: "/", component: Home },
+  { path: "/skins", component: Skins },
 ];
 
 const router = createRouter({
